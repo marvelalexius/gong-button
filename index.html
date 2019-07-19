@@ -1,0 +1,26 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Tombol</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Viga&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<div class="container">
+		<div class="tombol">
+			<button type="button" onclick="playSound()">Push</button>
+		</div>
+	</div>
+	
+
+	<audio id="audio" src="triple-metal-gong.mp3" autoplay="false" ></audio>
+
+	<script>
+	function playSound() {
+				var sound = document.getElementById("audio");
+				sound.play();
+		}
+	</script>
+</body>
+</html>
